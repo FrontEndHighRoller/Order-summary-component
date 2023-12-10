@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body,
@@ -65,12 +67,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.6rem;
+  overflow: hidden;
   margin: 3.75rem 1.25rem;
-}
-
-.container > img {
-  border-radius: 10px 10px 0 0;
+  max-width: 22rem;
 }
 
 .container h1 {
@@ -100,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   padding: 0.6rem;
 }
 
@@ -117,7 +117,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .change {
@@ -135,8 +135,8 @@ body {
   padding: 0.8rem 1rem;
   background-color: var(--Bright-blue);
   color: white;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px grey;
+  border-radius: 0.6rem;
+  box-shadow: 0.31rem 0.31rem 1.25rem grey;
 }
 
 /* Active states start */
@@ -153,7 +153,6 @@ body {
 
 .buttons a:nth-child(2):hover,
 .buttons a:nth-child(2):active {
-  color: inherit;
   font-weight: 700;
 }
 
@@ -161,7 +160,6 @@ body {
 
 @media (min-width: 90rem) {
   .container {
-    width: 22rem;
     font-size: 0.8rem;
   }
   .container-part p {
@@ -172,7 +170,7 @@ body {
     font-size: 1rem;
   }
   .sub-sub-container {
-    margin-right: 40px;
+    margin-right: 2.5rem;
   }
 }
 
